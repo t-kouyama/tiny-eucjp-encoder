@@ -12,7 +12,7 @@
                 TABLE[i] = i;
             }
 
-            for (const [s1, e1] of [[0x8E, 0x8E], [0xA1, 0xFE]]) {
+            for (const [s1, e1] of [[0x8E, 0x8E], [0xA1, 0xFC]]) {
                 for (let i = s1; i <= e1; i++) {
                     a[0] = i;
                     for (let j = 0xA1; j <= 0xFE; j++) {

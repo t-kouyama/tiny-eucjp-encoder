@@ -1,6 +1,6 @@
 {
   "name": "tiny-eucjp-encoder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny EUC-JP(CP51932) encoder - Only 679 bytes",
   "main": "index.min.js",
   "keywords": [
