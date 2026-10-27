@@ -1,7 +1,7 @@
 {
   "name": "tiny-eucjp-encoder",
-  "version": "1.0.1",
-  "description": "Tiny EUC-JP(CP51932) encoder - Only 679 bytes",
+  "version": "1.2.0",
+  "description": "Tiny EUC-JP(CP51932) encoder - Only 718 bytes",
   "main": "index.min.js",
   "keywords": [
     "eucjp",
@@ -11,12 +11,13 @@
     "japanese",
     "charset",
     "encoding",
+    "fast",
     "tiny"
   ],
   "license": "MIT",
   "types": "index.d.ts",
   "engines": {
-    "node": ">=8.3"
+    "node": ">=13"
   },
   "repository": {
     "type": "git",

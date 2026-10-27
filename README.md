@@ -1,6 +1,6 @@
 # tiny-eucjp-encoder
 
-Tiny EUC-JP(CP51932) encoder - Only 679 bytes
+Tiny EUC-JP(CP51932) encoder - Only 718 bytes
 
 ## Installation
 
@@ -33,17 +33,15 @@ console.log(bytes); // Uint8Array(10) [72, 101, 108, 108, 111, 32, 192, 164, 179
 
 ## Benchmark
 
-Comparison with iconv-lite (operations per second)
+Comparison with iconv-lite 0.7.3 (operations per second, Japanese text, Node.js 24)
 
 | chars | tiny-eucjp-encoder | iconv-lite | faster |
 |------:|-------------------:|-----------:|-------:|
-|    30 |          1,052,011 |    284,206 |  3.70x |
-|   300 |            484,369 |    249,533 |  1.94x |
-|  3000 |             53,060 |     26,388 |  2.01x |
+|    30 |          5,764,032 |    773,578 |  7.45x |
+|   300 |            550,127 |    214,061 |  2.57x |
+|  3000 |             83,697 |     27,736 |  3.02x |
 
-3.7x faster than iconv-lite for short text, and about 2x faster for longer text.
-
-First call needs a few ms to init. After that, very fast.
+About 2.6x to 7.5x faster than iconv-lite.
 
 ## Decoder?
 
